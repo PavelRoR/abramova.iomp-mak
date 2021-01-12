@@ -77,6 +77,8 @@ footer
 	border-radius: 48px;
 	padding 19px 34px
 	transition: all .3s ease
+	position relative
+	z-index 99
 	&:focus
 		text-decoration none
 		color #fff
@@ -95,3 +97,32 @@ footer
 	color #393939;
 	&-center
 		text-align center
+.general-img
+	position absolute
+.general-text
+	color #5E5D5D
+	span
+		color #FB4B4B
+		font-weight: 600
+.general-list
+	li
+		list-style: none
+	&-1
+		li
+			position relative
+			margin-bottom: 25px
+			padding-left: 34px
+			font-size: 20px
+			&:last-child
+				margin-bottom: 0
+			&:before
+				content: ''
+				display block
+				position absolute
+				top 15px
+				left 0
+				width 17px
+				height 3px
+				background-color: #FB4B4B;
+			span
+				font-weight: 600

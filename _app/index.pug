@@ -11,14 +11,16 @@
 -var group = '';
 -var formId = '';
 -var formVc = '';
--var ak = true
--var noref = true
+-var ak = true;
+-var noref = true;
+-var href = '#Modal';
+-var video = '';
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
 
-mixin b(cl,href,p,target,id)
+mixin b(cl,clb,href,p,target,id)
 	.button-wrapper(class=cl)
-		a.button(href=href target=target id=id)=p
+		a.button(class=clb href=href target=target id=id)=p
 mixin gt(cl,h3)
 	h3.general-title(class=cl)=h3
 

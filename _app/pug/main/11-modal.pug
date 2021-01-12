@@ -1,0 +1,23 @@
+.modal#Modal
+	h3.modal-title Спешите записаться!
+	form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-modal
+		.email-block.email-block-form
+			input( type="hidden" value="1" name="required_fields[email]")
+			input(class="input input-mail input-mail-modal" name="Contact[email]" type="text" placeholder="Ваш email")
+		button(type="submit").button.button-form.button-form-modal Записаться на мастер-класс
+		.clearfix
+		p.alert-message
+		.checking.checking-modal
+			input(type="checkbox" id="check-2" checked).check
+			label(for="check-2").check-label Я согласен с 
+				a(href="https://mastervision.su/politics.pdf" target="_blank") условиями обработки
+				|  персональных данных по 152 - Ф3
+		div(style="display: none;")
+			#formTypeSpecificVars-2(style="display: none;")
+				input(type="hidden" value=group id="form_newsletter_id_newsletter_2" name="Contact[id_newsletter]")
+			<!-- API код канала рекламы -->
+			input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_2" name="Contact[id_advertising_channel_page]")
+			input(type="hidden" name="formId" value=formId)
+			input(type="hidden" name="formVc" value=formVc)
+			input(type="hidden" name="_aid" value="")
+			input(type="hidden" name="_vcaid" value="")

@@ -1,0 +1,81 @@
+section#plan
+	.container
+		.days
+			h3.days-title План мастер-класса:
+			.day.day-1
+				.day-title.day-title-1
+					img.day-title-img(src=path+"img/images/plan.png" alt="Декор заголовка")
+					h4 День 
+						span 1.
+					h4 Я и мои отношения: 
+						br
+						| почему не везет в личной жизни
+				.row
+					.col-md-6
+						ul.general-list.general-list-2
+							li Знакомство с МАК
+							li Основные принципы работы с МАК
+							li Как через МАК узнавать о себе то, что скрыто от нашего сознания
+					.col-md-6
+						ul.general-list.general-list-2
+							li Техника «Тень партнёра», которая поможет увидеть скрытые части личности партнёра
+							li Техника «Партнёр по судьбе» поможет распознать при помощи МАК, для какой цели появился партнёр
+							li
+								span Специальная практика. 
+								| Пошаговая инструкция работы со своими запросами в сфере отношений
+			.day.day-2
+				.day-title.day-title-2
+					h4 День 
+						span 2.
+					h4 Я и деньги
+				.row
+					.col-md-6
+						ul.general-list.general-list-2
+							li Разбираем колоды МАК, работающие с деньгами
+							li Учимся выявлять истинную причину денежных проблем
+							li Техника «Кому выгодно моё безденежье?». Кто несчастлив, когда счастливы мы
+					.col-md-6
+						ul.general-list.general-list-2
+							li
+								span Специальная практика. 
+								| Упражнение «Денежный слив» – работаем с кредитами, долгами, денежными потерями
+							li Демосессия по запросам участников
+			.day.day-3
+				.day-title.day-title-3
+					img.day-title-img(src=path+"img/images/plan.png" alt="Декор заголовка")
+					h4 День 
+						span 3.
+					h4 Я и мои проблемы
+				.row
+					.col-md-6
+						ul.general-list.general-list-2
+							li Разбираем через МАК, как работать с проблемами в любой сфере жизни
+							li Разбираем треугольник Карпмана «Жертва – Тиран – Спасатель»
+							li Знакомимся с играми и ролями, в которые люди играют друг с другом
+					.col-md-6
+						ul.general-list.general-list-2
+							li Разбираем свои детские фото и учимся по ним с помощью МАК выявлять свой потенциал
+							li
+								span Специальная практика. 
+								| Упражнение «Корень проблем» – поиск своего первоисточника формирования проблем
+			form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-plan
+			.email-block.email-block-form
+				input( type="hidden" value="1" name="required_fields[email]")
+				input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="E-mail")
+			button(type="submit").button.button-form.button-form-plan Записаться
+			.clearfix
+			p.alert-message
+			.checking.checking-main
+				input(type="checkbox" id="check-1" checked).check
+				label(for="check-1").check-label Я согласен с 
+					a(href="https://mastervision.su/politics.pdf" target="_blank") условиями обработки
+					|  персональных данных по 152 - Ф3
+			div(style="display: none;")
+				#formTypeSpecificVars-1(style="display: none;")
+					input(type="hidden" value=group id="form_newsletter_id_newsletter_1" name="Contact[id_newsletter]")
+				<!-- API код канала рекламы -->
+				input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_1" name="Contact[id_advertising_channel_page]")
+				input(type="hidden" name="formId" value=formId)
+				input(type="hidden" name="formVc" value=formVc)
+				input(type="hidden" name="_aid" value="")
+				input(type="hidden" name="_vcaid" value="")
