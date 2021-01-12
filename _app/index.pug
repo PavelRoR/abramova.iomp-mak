@@ -1,0 +1,47 @@
+-var path = '';
+-var head_url = 'https://abramova.iomp.ru/mak/';
+-var head_title = '«Найдите ключ к решению ваших внутренних конфликтов с метафорическими ассоциативными картами»';
+-var head_description = 'Мастер-класс Жанны Абрамовой';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var scripts = path+'js/scripts.min.js';
+-var action = '';
+-var group = '';
+-var formId = '';
+-var formVc = '';
+-var ak = true
+-var noref = true
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin b(cl,href,p,target,id)
+	.button-wrapper(class=cl)
+		a.button(href=href target=target id=id)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/main/1-main
+			include pug/main/2-video
+			include pug/main/3-about
+			include pug/main/4-for
+			include pug/main/5-plan
+			include pug/main/6-after
+			include pug/main/7-author
+			include pug/main/8-benefits
+			include pug/main/9-revs
+			include pug/main/10-last
+		include pug/base/2-footer
+		include pug/main/11-modal
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
