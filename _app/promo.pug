@@ -1,0 +1,51 @@
+-var path = '../';
+-var head_url = 'https://abramova.iomp.ru/mak/promo/';
+-var head_title = 'Оставьте свои данные, чтоб скачать рабочие тетради для каждого из дней мастер-класса';
+-var styles = path+'css/promo.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+
+-var ak = true;
+-var noref = true;
+// -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				include pug/base/1-header
+				h1.main-title Оставьте свои данные, чтоб 
+					span скачать рабочие тетради 
+					| для каждого из дней мастер-класса. Они помогут вам максимально эффективно работать на уроках
+				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-promo
+					.inputrow
+						.inputblock
+							input(type="hidden" value="1" name="required_fields[phone_number]")
+							input(class="input input-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
+					button(type="submit").button.button-form Забрать тетради 
+						br
+						| и завершить регистрацию
+					.clearfix
+					p.alert-message
+					.checking
+						input(type="checkbox" id="check" checked).check
+						label(for="check").check-label Я согласен с 
+							a(href="https://mastervision.su/politics.pdf" target="_blank" download="download") условиями обработки
+							|  персональных данных  по 152 - Ф3
+					div(style="display: none;")
+						div#formTypeSpecificVars(style="display: none;")
+						<!-- API код канала рекламы --> 
+						input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")#form_newsletter_id_advertising_channel_page
+						input(type="hidden" name="formId" value=formId)
+						input(type="hidden" name="formVc" value=formVc)
+						input(type="hidden" name="_aid" value="")
+						input(type="hidden" name="_vcaid" value="")
+		include pug/base/2-footer
+		script(src="../js/promo.min.js")
+		include pug/scripts/body_bottom_scripts

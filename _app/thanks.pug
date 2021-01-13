@@ -1,0 +1,27 @@
+-var path = '../';
+-var head_url = 'https://abramova.iomp.ru/mak/thanks/';
+-var head_title = 'Вы зарегистрированы на мастер-класс «Найдите ключ к решению ваших внутренних конфликтов с метафорическими ассоциативными картами»';
+-var styles = path+'css/promo.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+
+-var ak = true;
+-var noref = true;
+// -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				include pug/base/1-header
+				h1.main-subtitle Вы зарегистрированы на мастер-класс 
+					span «Найдите ключ к решению ваших внутренних конфликтов с метафорическими ассоциативными картами»
+				a.button.button-thanks(href='https://drive.google.com/drive/folders/1Lbh3nRB7IxRM2OX4BMFBRmIy1iilsBeM' target="_blank") Забрать тетради
+		include pug/base/2-footer
+		include pug/scripts/body_bottom_scripts
