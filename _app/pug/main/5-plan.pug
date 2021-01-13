@@ -22,7 +22,7 @@ section#plan
 							li Техника «Партнёр по судьбе» поможет распознать при помощи МАК, для какой цели появился партнёр
 							li
 								span Специальная практика. 
-								| Пошаговая инструкция работы со своими запросами в сфере отношений
+								|  Пошаговая инструкция работы со своими запросами в сфере отношений
 			.day.day-2
 				.day-title.day-title-2
 					h4 День 
@@ -38,7 +38,7 @@ section#plan
 						ul.general-list.general-list-2
 							li
 								span Специальная практика. 
-								| Упражнение «Денежный слив» – работаем с кредитами, долгами, денежными потерями
+								|  Упражнение «Денежный слив» – работаем с кредитами, долгами, денежными потерями
 							li Демосессия по запросам участников
 			.day.day-3
 				.day-title.day-title-3
@@ -57,25 +57,25 @@ section#plan
 							li Разбираем свои детские фото и учимся по ним с помощью МАК выявлять свой потенциал
 							li
 								span Специальная практика. 
-								| Упражнение «Корень проблем» – поиск своего первоисточника формирования проблем
+								|  Упражнение «Корень проблем» – поиск своего первоисточника формирования проблем
 			form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target=form_target).form.form-plan
-			.email-block.email-block-form
-				input( type="hidden" value="1" name="required_fields[email]")
-				input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="E-mail")
-			button(type="submit").button.button-form.button-form-plan Записаться
-			.clearfix
-			p.alert-message
-			.checking.checking-main
-				input(type="checkbox" id="check-1" checked).check
-				label(for="check-1").check-label Я согласен с 
-					a(href="https://mastervision.su/politics.pdf" target="_blank") условиями обработки
-					|  персональных данных по 152 - Ф3
-			div(style="display: none;")
-				#formTypeSpecificVars-1(style="display: none;")
-					input(type="hidden" value=group id="form_newsletter_id_newsletter_1" name="Contact[id_newsletter]")
-				<!-- API код канала рекламы -->
-				input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_1" name="Contact[id_advertising_channel_page]")
-				input(type="hidden" name="formId" value=formId)
-				input(type="hidden" name="formVc" value=formVc)
-				input(type="hidden" name="_aid" value="")
-				input(type="hidden" name="_vcaid" value="")
+				.email-block.email-block-form
+					input( type="hidden" value="1" name="required_fields[email]")
+					input(class="input input-mail input-mail-plan" name="Contact[email]" type="text" placeholder="E-mail")
+				button(type="submit").button.button-form.button-form-plan Записаться
+				.clearfix
+				p.alert-message
+				.checking.checking-plan
+					input(type="checkbox" id="check-1" checked).check
+					label(for="check-1").check-label Я согласен с 
+						a(href="https://mastervision.su/politics.pdf" target="_blank") условиями обработки
+						|  персональных данных по 152 - Ф3
+				div(style="display: none;")
+					#formTypeSpecificVars-1(style="display: none;")
+						input(type="hidden" value=group id="form_newsletter_id_newsletter_1" name="Contact[id_newsletter]")
+					<!-- API код канала рекламы -->
+					input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_1" name="Contact[id_advertising_channel_page]")
+					input(type="hidden" name="formId" value=formId)
+					input(type="hidden" name="formVc" value=formVc)
+					input(type="hidden" name="_aid" value="")
+					input(type="hidden" name="_vcaid" value="")

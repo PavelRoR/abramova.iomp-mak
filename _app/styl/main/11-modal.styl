@@ -3,9 +3,9 @@
 	cursor auto !important
 	padding 20px
 	background-color: #F8F8F8
-	background-image url(../img/images/ellipse.png)
-	background-repeat no-repeat
-	background-position: center
+	background-image url(../img/images/video.png),url(../img/images/video-1.png),url(../img/images/video-2.png)
+	background-repeat no-repeat, no-repeat, no-repeat
+	background-position: center, center left -70px, center right -70px
 	background-size contain
 	width 100%
 	max-width 550px
@@ -18,8 +18,15 @@
 		transform: rotateY(180deg)
 .form-modal
 	margin 0 auto
-.form-title
+	position relative
+	z-index: 50
+.modal-title
 	text-align center
 	font-size: 30px
 	font-weight: 600
 	margin-bottom: 30px
+.input-mail-modal
+	display block
+	width 100%
+	max-width 345px
+	margin 0 auto 20px

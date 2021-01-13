@@ -70,6 +70,7 @@ footer
 	text-decoration none
 	color: #fff
 	width: auto
+	min-width 286px
 	font-size: 18px
 	font-weight: bold
 	background-color: #FB4B4B;
@@ -126,3 +127,37 @@ footer
 				background-color: #FB4B4B;
 			span
 				font-weight: 600
+	&-2
+		li
+			margin-bottom: 30px
+			padding-left: 75px
+			font-size: 20px
+			font-weight: 300
+			color: #454545
+			position relative
+			span
+				font-weight: 500
+				display inline-block
+			&:last-child
+				margin-bottom: 0
+			&:before
+				content: ''
+				display block
+				position absolute
+				top 0
+				left 0
+				border-radius: 50px
+				border: 3px solid #DFDFDF;
+				width 41px
+				height 41px
+			&:after
+				content: ''
+				display block
+				position absolute
+				width 50px
+				height 27px
+				border-bottom: 4px solid #FB4B4B
+				border-left: 4px solid #FB4B4B
+				transform: rotate(-43deg)
+				top: -15px;
+				left: 4px;
