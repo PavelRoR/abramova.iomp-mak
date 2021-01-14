@@ -1,0 +1,21 @@
+mixin ben(n,h4,p)
+	.benefit(class="benefit-" + n)
+		.benefit-img(class="benefit-img-" + n)
+		h4.benefit-title=h4
+		p.general-text=p
+
+section#benefits
+	.container
+		img.general-img.general-img-benefits-1(src=path+"img/images/benefits.png" alt="Шарики")
+		img.general-img.general-img-benefits-2(src=path+"img/images/benefits.png" alt="Шарики")
+		h3.benefits-title Преимущества нашего института
+			small Если вы решите учиться у нас
+		.row
+			.col-md-5.col-md-offset-1
+				+ben('1','Практическая направленность','80% наших студентов консультируют уже после первого месяца обучения')
+			.col-md-5
+				+ben('2','Гибкая система рассрочек','Подберем вариант рассрочки с комфортным размером платежа, если вы решите пройти платный курс')
+		.row
+			.col-md-6.col-md-offset-3
+				+ben('3','Профессиональная поддержка студентов','Прямая связь с преподавателями на протяжении всего времени обучения')
+		+b('button-wrapper-center button-wrapper-benefits','',href,'Записаться на курс')

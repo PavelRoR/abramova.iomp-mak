@@ -1,0 +1,23 @@
+mixin ho(n,p)
+	.helps-item(class=".helps-item-"+n)
+		.helps-item-img(class="helps-item-img-"+n)
+		p.helps-item-text=p
+
+section#helps
+	.container
+		img.general-img.general-img-helps-1(src=path+"img/images/helps-1.png" alt="Шарики")
+		img.general-img.general-img-helps-2(src=path+"img/images/helps-2.png" alt="Шарики")
+		+gt('general-title-center','Как именно МАК помогают в психотерапии')
+		.row
+			.col-md-5
+				+ho('1','Выстраивают доверительные отношения уже при первой встрече')
+			.col-md-5.col-md-offset-2
+				+ho('2','Безболезненно и быстро справляются со страхом и саботажем клиента')
+		.row
+			.col-md-5
+				+ho('3','Помогают прорабатывать психосоматозы')
+			.col-md-5.col-md-offset-2
+				+ho('4','Дают практически мгновенный доступ к необходимому материалу психики')
+		.row
+			.col-md-4.col-md-offset-4
+				+ho('5','Существенно сокращают время до получения результата от терапии')

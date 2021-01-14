@@ -1,0 +1,40 @@
+-var path = '../';
+-var head_url = 'https://abramova.iomp.ru/mak/course/';
+-var head_title = '«Станьте дипломированным психологом со знанием современных психотерапевтических инструментов»';
+-var head_description = 'Комплексная программа профессиональной переподготовки начинающих и практикующих психологов по направлению метафорические карты';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/course.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var scripts = path+'js/course.min.js';
+-var noref = true;
+-var href = '#plan';
+//- -var footer_title = true
+-var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin b(cl,clb,href,p,target,id)
+	.button-wrapper(class=cl)
+		a.button(class=clb href=href target=target id=id)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/course/1-main
+			include pug/course/2-helps
+			include pug/course/3-can
+			include pug/course/4-get
+			include pug/course/5-author
+			include pug/course/6-plan
+			include pug/main/9-revs
+			include pug/course/7-benefits
+		include pug/base/2-footer
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
