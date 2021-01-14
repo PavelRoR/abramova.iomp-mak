@@ -1,6 +1,6 @@
 -var path = '../';
 -var head_url = 'https://abramova.iomp.ru/mak/promo/';
--var head_title = 'Оставьте свои данные, чтоб скачать трансформационное пособие';
+-var head_title = 'Оставьте свои данные, чтобы скачать трансформационное пособие';
 -var styles = path+'css/promo.min.css';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
@@ -9,7 +9,7 @@
 -var formVc = '3869470098';
 -var scripts = path+'js/promo.min.js';
 
--var ak = true;
+//-var ak = true;
 -var noref = true;
 //-var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
@@ -24,9 +24,9 @@ html(lang="ru")
 		section#main
 			.container
 				include pug/base/1-header
-				h1.main-title Оставьте свои данные, чтоб 
+				h1.main-title Оставьте свои данные, чтобы скачать 
 					span трансформационное пособие
-				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-promo
+				form(action=action method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-promo
 					.inputrow
 						.inputblock
 							input(type="hidden" value="1" name="required_fields[phone_number]")

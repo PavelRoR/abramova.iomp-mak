@@ -32,10 +32,10 @@ $(document).ready(function() {
             }
             if (email.val() && check) {
 
-                button.text('Отправляем...');
-                setTimeout(function () {
-                    button.text('Отправлено!');
-                }, 500);
+                // button.text('Отправляем...');
+                // setTimeout(function () {
+                //     button.text('Отправлено!');
+                // }, 500);
                 return true
             }
         });
