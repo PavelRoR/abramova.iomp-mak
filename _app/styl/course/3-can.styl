@@ -9,18 +9,18 @@
 	left 0
 	// width 320%
 	height 100%
-	&:before
-		content: ''
-		display block
-		position absolute
-		width 911px
-		height 379px
-		background-image url(../img/images/can.png)
-		background-repeat no-repeat
-		background-position: top left -100px
-		top -230px
-		left -160px
-		z-index 1
+	// &:before
+	// 	content: ''
+	// 	display block
+	// 	position absolute
+	// 	width 911px
+	// 	height 379px
+	// 	background-image url(../img/images/can.png)
+	// 	background-repeat no-repeat
+	// 	background-position: top left -100px
+	// 	top -230px
+	// 	left -160px
+	// 	z-index 1
 .can-block .can-block-list
 	width 100%
 	max-width 1170px
@@ -38,17 +38,44 @@
 	font-size: 30px
 	font-weight: bold
 	color #8480E1
-	opacity 0
 	padding 0
 	width auto
 	height auto
-	opacity 1
 	cursor pointer
 	transition: all .3s ease
+	position relative
+	span
+		position absolute
+		z-index 30
+		width 100%
+		height 100%
+		top 0
+		left 0
+		&:before
+			content: ''
+			display block
+			position absolute
+			width 514px
+			height 214px
+			background-image url(../img/images/can.png)
+			background-repeat no-repeat
+			background-position: center
+			background-size contain
+			left -150px
+			right 0
+			margin 0 auto
+			top calc(50% - 107px)
+			transition: all .4s ease
+			z-index 1
+			opacity 0
+			transform: scale(.1)
 	&:hover
-		color: #3D36DB;
 	&.slick-current
 		color: #3D36DB;
+		color: #3D36DB;
+		span:before
+			opacity 1
+			transform: scale(1)
 .can-blocks-titles
 	left 8%
 	width 100%

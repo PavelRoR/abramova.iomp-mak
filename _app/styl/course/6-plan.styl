@@ -33,33 +33,38 @@
 	line-height: 59px
 	text-decoration underline
 	position relative
-	&:nth-child(2)
-		margin 0 110px
+	span
+		position absolute
+		z-index 30
+		width 100%
+		height 100%
+		top 0
+		left 0
+		&:before
+			content: ''
+			display block
+			position absolute
+			width 514px
+			height 214px
+			background-image url(../img/images/course-plan.png)
+			background-repeat no-repeat
+			background-position: center
+			left -150px
+			right 0
+			margin 0 auto
+			top calc(50% - 107px)
+			transition: all .3s ease
+			z-index 1
+			opacity 0
+			transform: scale(.1)
 	&:hover
 	&.active
 		color: #3D36DB
-		span
-			transition: all .3s ease
-			position absolute
-			z-index 30
-			width 100%
-			height 100%
-			top 0
-			left 0
-			&:before
-				content: ''
-				display block
-				position absolute
-				width 514px
-				height 214px
-				background-image url(../img/images/course-plan.png)
-				background-repeat no-repeat
-				background-position: center
-				left -150px
-				right 0
-				margin 0 auto
-				top calc(50% - 107px)
-				z-index 1
+		span:before
+			opacity 1
+			transform: scale(1)
+	&:nth-child(2)
+		margin 0 110px
 .module-body
 	display: none;
 	transition: all .8s ease-in;
