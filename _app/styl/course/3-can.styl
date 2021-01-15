@@ -1,0 +1,118 @@
+#can
+	padding 90px 0
+	position relative
+.can-blocks
+	margin-bottom: 60px
+	position relative
+	padding 0px 15px 0
+	top 0
+	left 0
+	// width 320%
+	height 100%
+	&:before
+		content: ''
+		display block
+		position absolute
+		width 911px
+		height 379px
+		background-image url(../img/images/can.png)
+		background-repeat no-repeat
+		background-position: top left -100px
+		top -230px
+		left -160px
+		z-index 1
+.can-block .can-block-list
+	width 100%
+	max-width 1170px
+	// margin 0 auto
+.slick-dotted.can-blocks
+	margin-bottom: 100px
+// .full-plan-slider-titles-container
+// 	width 100%
+// 	max-width 1440px
+// 	margin 0 auto
+// 	left 0
+// 	right 0
+// 	left -42%
+.can-block-title
+	font-size: 30px
+	font-weight: bold
+	color #8480E1
+	opacity 0
+	padding 0
+	width auto
+	height auto
+	opacity 1
+	cursor pointer
+	transition: all .3s ease
+	&:hover
+		color: #3D36DB;
+	&.slick-current
+		color: #3D36DB;
+.can-blocks-titles
+	left 8%
+	width 100%
+	max-width 1360px
+	margin 0 auto 60px
+	position relative
+	z-index 90
+	.slick-list
+		overflow visible
+
+	// .slick-dots
+	// 	top 0
+	// 	left 0
+	// 	transition all .4s ease
+	// 	li
+	// 		width auto
+	// 		height auto
+	// 		margin 0 100px 0 0
+	// 		opacity .1
+	// 		button
+	// 			font-size: 36px
+	// 			font-weight: bold
+	// 			color #3C978C
+	// 			opacity 0
+	// 			padding 0
+	// 			width auto
+	// 			height auto
+	// 			opacity 1
+	// 		&.slick-active
+	// 			opacity 1
+	// 			&+li
+	// 				opacity .5
+	// 				&+li
+	// 					opacity .25
+				
+.can-block-list
+	counter-reset: my-counter;
+	li
+		padding-left: 55px
+		list-style none
+		min-height 35px
+		margin-bottom: 50px
+		font-size: 20px
+		font-weight: 500
+		counter-increment: my-counter;
+		position: relative;
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content: counter(my-counter);
+			width: 35px;
+			height: 35px;
+			top 0
+			left 0
+			position absolute
+			line-height: 35px
+			background-color: #D9C1D0
+			background-image: linear-gradient(233.03deg, #3D36DB 0%, rgba(203, 90, 90, 0) 118.75%);
+			border-radius: 50px
+			font-size: 24px
+			font-weight: bold
+			color #F3F3F3;
+			text-align center
+	&-2
+		counter-reset: my-counter 4;
+	&-3
+		counter-reset: my-counter 3;
