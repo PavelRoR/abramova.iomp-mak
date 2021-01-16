@@ -83,17 +83,18 @@ $(document).ready(function() {
             // respondTo: '',
             // fade: true
                     responsive: [{
-                breakpoint: 481,
+                breakpoint: 767,
                 settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 360,
-                settings: {
-                    slidesToShow: 2
+                    slidesToShow: 2,
                 }
             }
+            // ,
+            // {
+            //     breakpoint: 360,
+            //     settings: {
+            //         slidesToShow: 2
+            //     }
+            // }
             ]
           });
     $('[data-fancybox]').fancybox({

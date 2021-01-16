@@ -16,7 +16,7 @@ if io
 	|
 	<!-- AutoWebOffice counter -->
 	script(type="text/javascript")
-		| var awoUtmData = awoUtmData || {};awoUtmData['subdomain'] = 'iomp';(function() {var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;d.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'iomp.autoweboffice.ru/js/utm.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);})();}
+		| if (awoUtmData === undefined) {var awoUtmData = awoUtmData || {};awoUtmData['subdomain'] = 'iomp';(function() {var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;d.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'iomp.autoweboffice.ru/js/utm.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);})();}
 	|
 	<!-- /AutoWebOffice counter -->
 |
